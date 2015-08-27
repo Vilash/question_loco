@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block title %}Questions{% endblock %}
+{% block content %}
+<ol>
+{% for question in questions %}
+<h3>
+<li>
+{{ question.question }} ---- {{ question.category }}
+</li>
+</h3>
+
+{% endfor %}
+</ol>
+{% endblock %}
